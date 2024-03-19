@@ -1,0 +1,64 @@
+### API 1 register
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+### API 2 login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+### API 3 user feed
+GET http://localhost:3000/user/tweets/feed
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+### API 4 user following
+GET http://localhost:3000/user/following/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+
+### API 5 people follow user
+GET http://localhost:3000/user/followers/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+
+### API 6 return tweet info 
+GET http://localhost:3000/tweets/2/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+
+### API 7 return list of users who liked
+GET http://localhost:3000/tweets/2/likes/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+
+### API 8 return list of tweet replies
+GET http://localhost:3000/tweets/2/replies/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+### API 9 return list of all tweets by user
+GET http://localhost:3000/user/tweets/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+
+### API 10 POST a tweet
+POST http://localhost:3000/user/tweets/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+### API 11 delete a tweet
+DELETE http://localhost:3000/tweets/1/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwicGFzc3dvcmQiOiJiaWRlbkAxMjMiLCJpYXQiOjE3MTA3MzIyNTV9.w1VZeKDwna5TRDaeaovlXxYWpJVoGWZVRy4N46Uup1g
